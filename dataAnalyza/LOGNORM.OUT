@@ -1,0 +1,46 @@
+
+	Distribution Summary
+
+Distribution:	Lognormal    
+Expression:	5 + LOGN(66.2, 130)
+Square Error:	0.056970
+
+Chi Square Test
+  Number of intervals	= 5
+  Degrees of freedom 	= 2
+  Test Statistic     	= 37.2
+  Corresponding p-value	< 0.005
+
+Kolmogorov-Smirnov Test
+  Test Statistic	= 0.206
+  Corresponding p-value	< 0.01
+
+	Data Summary
+
+Number of Data Points	= 100
+Min Data Value       	= 5
+Max Data Value       	= 146
+Sample Mean          	= 45.3
+Sample Std Dev       	= 23.7
+
+	Histogram Summary
+
+Histogram Range    	= 5 to 146
+Number of Intervals	= 10
+
+
+==================================================================
+Int.   No. of               Probability           Cumulative      
+No.    Data Pts.   x        Density               Distribution    
+------------------------------------------------------------------
+                            Data   Function       Data   Function   
+   0    11       19.1      0.110      0.272      0.110      0.272
+   1    24       33.2      0.240      0.206      0.350      0.479
+   2    25       47.3      0.250      0.128      0.600      0.606
+   3    19       61.4      0.190     0.0848      0.790      0.691
+   4    10       75.5      0.100     0.0597      0.890      0.751
+   5     7       89.6     0.0700     0.0438      0.960      0.795
+   6     3       104.     0.0300     0.0332      0.990      0.828
+   7     0       118.      0.000     0.0258      0.990      0.854
+   8     0       132.      0.000     0.0205      0.990      0.874
+   9     1       146.     0.0100     0.0166       1.00      0.891

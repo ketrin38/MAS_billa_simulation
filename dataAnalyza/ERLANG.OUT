@@ -1,0 +1,46 @@
+
+	Distribution Summary
+
+Distribution:	Erlang       
+Expression:	5 + ERLA(20.2, 2)
+Square Error:	0.006069
+
+Chi Square Test
+  Number of intervals	= 5
+  Degrees of freedom 	= 2
+  Test Statistic     	= 3.49
+  Corresponding p-value	= 0.191
+
+Kolmogorov-Smirnov Test
+  Test Statistic	= 0.104
+  Corresponding p-value	> 0.15
+
+	Data Summary
+
+Number of Data Points	= 100
+Min Data Value       	= 5
+Max Data Value       	= 146
+Sample Mean          	= 45.3
+Sample Std Dev       	= 23.7
+
+	Histogram Summary
+
+Histogram Range    	= 5 to 146
+Number of Intervals	= 10
+
+
+==================================================================
+Int.   No. of               Probability           Cumulative      
+No.    Data Pts.   x        Density               Distribution    
+------------------------------------------------------------------
+                            Data   Function       Data   Function   
+   0    11       19.1      0.110      0.156      0.110      0.156
+   1    24       33.2      0.240      0.252      0.350      0.408
+   2    25       47.3      0.250      0.212      0.600      0.620
+   3    19       61.4      0.190      0.149      0.790      0.768
+   4    10       75.5      0.100     0.0953      0.890      0.864
+   5     7       89.6     0.0700     0.0580      0.960      0.922
+   6     3       104.     0.0300     0.0341      0.990      0.956
+   7     0       118.      0.000     0.0196      0.990      0.975
+   8     0       132.      0.000     0.0110      0.990      0.987
+   9     1       146.     0.0100    0.00614       1.00      0.993

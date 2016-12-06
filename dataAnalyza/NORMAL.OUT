@@ -1,0 +1,46 @@
+
+	Distribution Summary
+
+Distribution:	Normal       
+Expression:	NORM(45.3, 23.6)
+Square Error:	0.008919
+
+Chi Square Test
+  Number of intervals	= 5
+  Degrees of freedom 	= 2
+  Test Statistic     	= 5.31
+  Corresponding p-value	= 0.0745
+
+Kolmogorov-Smirnov Test
+  Test Statistic	= 0.117
+  Corresponding p-value	= 0.12
+
+	Data Summary
+
+Number of Data Points	= 100
+Min Data Value       	= 5
+Max Data Value       	= 146
+Sample Mean          	= 45.3
+Sample Std Dev       	= 23.7
+
+	Histogram Summary
+
+Histogram Range    	= 5 to 146
+Number of Intervals	= 10
+
+
+==================================================================
+Int.   No. of               Probability           Cumulative      
+No.    Data Pts.   x        Density               Distribution    
+------------------------------------------------------------------
+                            Data   Function       Data   Function   
+   0    11       19.1      0.110     0.0893      0.110      0.132
+   1    24       33.2      0.240      0.171      0.350      0.302
+   2    25       47.3      0.250      0.230      0.600      0.532
+   3    19       61.4      0.190      0.219      0.790      0.751
+   4    10       75.5      0.100      0.147      0.890      0.899
+   5     7       89.6     0.0700     0.0700      0.960      0.969
+   6     3       104.     0.0300     0.0235      0.990      0.992
+   7     0       118.      0.000    0.00556      0.990      0.998
+   8     0       132.      0.000   0.000927      0.990      0.999
+   9     1       146.     0.0100   0.000109       1.00      0.999

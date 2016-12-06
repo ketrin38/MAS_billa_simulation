@@ -1,0 +1,46 @@
+
+	Distribution Summary
+
+Distribution:	Gamma        
+Expression:	5 + GAMM(21.6, 1.87)
+Square Error:	0.008302
+
+Chi Square Test
+  Number of intervals	= 5
+  Degrees of freedom 	= 2
+  Test Statistic     	= 4.75
+  Corresponding p-value	= 0.0949
+
+Kolmogorov-Smirnov Test
+  Test Statistic	= 0.119
+  Corresponding p-value	= 0.114
+
+	Data Summary
+
+Number of Data Points	= 100
+Min Data Value       	= 5
+Max Data Value       	= 146
+Sample Mean          	= 45.3
+Sample Std Dev       	= 23.7
+
+	Histogram Summary
+
+Histogram Range    	= 5 to 146
+Number of Intervals	= 10
+
+
+==================================================================
+Int.   No. of               Probability           Cumulative      
+No.    Data Pts.   x        Density               Distribution    
+------------------------------------------------------------------
+                            Data   Function       Data   Function   
+   0    11       19.1      0.110      0.169      0.110      0.169
+   1    24       33.2      0.240      0.252      0.350      0.421
+   2    25       47.3      0.250      0.207      0.600      0.628
+   3    19       61.4      0.190      0.145      0.790      0.773
+   4    10       75.5      0.100     0.0943      0.890      0.868
+   5     7       89.6     0.0700     0.0585      0.960      0.926
+   6     3       104.     0.0300     0.0352      0.990      0.961
+   7     0       118.      0.000     0.0208      0.990      0.982
+   8     0       132.      0.000     0.0120      0.990      0.994
+   9     1       146.     0.0100    0.00691       1.00       1.00

@@ -1,0 +1,17 @@
+Fit All
+
+Document:  D:\Data\Documents\vysokaSkola\MAS\MAS_billa_simulation\dataAnalyza\casy_obsluhy_pokladna.txt
+Data File: D:\Data\Documents\vysokaSkola\MAS\MAS_billa_simulation\dataAnalyza\casy_obsluhy_pokladna.txt
+
+
+Function       Sq Error
+-----------------------
+Beta           0.0022
+Weibull        0.00282
+Erlang         0.00607
+Gamma          0.0083
+Normal         0.00892
+Triangular     0.0383
+Exponential    0.0556
+Lognormal      0.057
+Uniform        0.0842
