@@ -114,9 +114,21 @@
 					</Properties>
 				</Variable>
 				<Variable Class="PlainVariable">
-					<Id>1481026616313</Id>
-					<Name><![CDATA[varPocetAkcLudi]]></Name>
-					<X>60</X><Y>220</Y>
+					<Id>1481033342818</Id>
+					<Name><![CDATA[varVstupPrud]]></Name>
+					<X>60</X><Y>280</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1481036841638</Id>
+					<Name><![CDATA[varPocetZlava]]></Name>
+					<X>240</X><Y>520</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -129,28 +141,69 @@
 					</Properties>
 				</Variable>
 				<Variable Class="PlainVariable">
-					<Id>1481031277611</Id>
-					<Name><![CDATA[varPocetBrigadnikov]]></Name>
-					<X>200</X><Y>230</Y>
+					<Id>1481036976877</Id>
+					<Name><![CDATA[varZlavaPercent]]></Name>
+					<X>240</X><Y>550</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
 						<Type><![CDATA[double]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[0.0]]></Code>
+						</InitialValue>
 					</Properties>
 				</Variable>
-				<Variable Class="PlainVariable">
-					<Id>1481033342818</Id>
-					<Name><![CDATA[varVstupPrud]]></Name>
-					<X>740</X><Y>260</Y>
+				<Variable Class="Parameter">
+					<Id>1481037879798</Id>
+					<Name><![CDATA[paPocetAkcLudi]]></Name>
+					<X>60</X><Y>220</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
-						<Type><![CDATA[double]]></Type>        
-					</Properties>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[int]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<NumericType><![CDATA[double]]></NumericType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1481037879796</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1481037882782</Id>
+					<Name><![CDATA[paPocetBrigadnikov]]></Name>
+					<X>60</X><Y>250</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[int]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<NumericType><![CDATA[double]]></NumericType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1481037882780</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
 				</Variable>
 			</Variables>
 			<Connectors>
@@ -524,7 +577,7 @@
 					<ReturnType><![CDATA[int]]></ReturnType>
 					<Id>1481025154868</Id>
 					<Name><![CDATA[funcCisloPokladne]]></Name>
-					<X>410</X><Y>450</Y>
+					<X>240</X><Y>460</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -550,21 +603,18 @@ return cislo;]]></Body>
 					<ReturnType><![CDATA[double]]></ReturnType>
 					<Id>1481034426080</Id>
 					<Name><![CDATA[funcBrigadniciCas]]></Name>
-					<X>610</X><Y>450</Y>
+					<X>240</X><Y>490</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
-					<Body><![CDATA[if (varPocetBrigadnikov == 1) {
-	
-}]]></Body>
 				</Function>
 			</Functions>
 			<CustomDistributions>
 				<CustomDistribution>
 					<Id>1480947401862</Id>
 					<Name><![CDATA[cdPrichodyZakaznikov]]></Name>
-					<X>280</X><Y>400</Y>
+					<X>60</X><Y>310</Y>
 					<Label><X>15</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -627,7 +677,7 @@ return cislo;]]></Body>
     			<Statistics>
 					<Id>1480862745547</Id>
 					<Name><![CDATA[statPobytVSysteme]]></Name>
-					<X>50</X><Y>260</Y>
+					<X>50</X><Y>410</Y>
 					<Label><X>15</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -648,7 +698,7 @@ return cislo;]]></Body>
     			<Statistics>
 					<Id>1480862861200</Id>
 					<Name><![CDATA[statDlzkaRaduPokladna1]]></Name>
-					<X>50</X><Y>300</Y>
+					<X>50</X><Y>450</Y>
 					<Label><X>15</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -669,7 +719,7 @@ return cislo;]]></Body>
     			<Statistics>
 					<Id>1480863473435</Id>
 					<Name><![CDATA[statDlzkaRaduPokladna2]]></Name>
-					<X>50</X><Y>340</Y>
+					<X>50</X><Y>490</Y>
 					<Label><X>15</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -690,7 +740,7 @@ return cislo;]]></Body>
     			<Statistics>
 					<Id>1480863474529</Id>
 					<Name><![CDATA[statDlzkaRaduPokladna3]]></Name>
-					<X>50</X><Y>380</Y>
+					<X>50</X><Y>530</Y>
 					<Label><X>15</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -711,7 +761,7 @@ return cislo;]]></Body>
     			<Statistics>
 					<Id>1480863486479</Id>
 					<Name><![CDATA[statDlzkaRaduPokladna4]]></Name>
-					<X>50</X><Y>420</Y>
+					<X>50</X><Y>570</Y>
 					<Label><X>15</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -761,6 +811,27 @@ return cislo;]]></Body>
 					<AutoUpdate>true</AutoUpdate>
 					<OccurrenceAtTime>true</OccurrenceAtTime>
 					<OccurrenceDate>1481011200000</OccurrenceDate>
+					<OccurrenceTime Class="CodeUnitValue">
+						<Code><![CDATA[0]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
+					</OccurrenceTime>
+					<RecurrenceCode Class="CodeUnitValue">
+						<Code><![CDATA[1]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
+					</RecurrenceCode>
+					<Discrete>true</Discrete>
+				</Statistics>
+    			<Statistics>
+					<Id>1481036537369</Id>
+					<Name><![CDATA[statistics]]></Name>
+					<X>280</X><Y>380</Y>
+					<Label><X>15</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<AutoUpdate>true</AutoUpdate>
+					<OccurrenceAtTime>true</OccurrenceAtTime>
+					<OccurrenceDate>1481097600000</OccurrenceDate>
 					<OccurrenceTime Class="CodeUnitValue">
 						<Code><![CDATA[0]]></Code>
 						<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
@@ -896,7 +967,7 @@ return cislo;]]></Body>
 											<Name><![CDATA[paZaciatokObsluhy]]></Name>
 										</Parameter>
 										<Parameter>
-											<Name><![CDATA[paZlava]]></Name>
+											<Name><![CDATA[paPocetLudiPred]]></Name>
 										</Parameter>
 									</Parameters>
 									<ReplicationFlag>true</ReplicationFlag>
@@ -1080,7 +1151,14 @@ return cislo;]]></Body>
 						<Parameter>
 							<Name><![CDATA[onEnter]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[statPobytVSysteme.add(time()-agent.paPrichodDoSystemu);]]></Code>
+								<Code><![CDATA[statPobytVSysteme.add(time()-agent.paPrichodDoSystemu);
+
+if (agent.paPocetLudiPred >= paPocetAkcLudi) {
+	varPocetZlava++;
+	varZlavaPercent = (double) varPocetZlava / (double) odchod.in.count();
+}
+
+]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
@@ -1785,7 +1863,8 @@ return cislo;]]></Body>
 							<Name><![CDATA[onEnter]]></Name>
 							<Value Class="CodeValue">
 								<Code><![CDATA[statDlzkaRaduPokladna1.add(self.queueSize(),time());
-agent.paZaciatokCakaniaRad = time();]]></Code>
+agent.paZaciatokCakaniaRad = time();
+agent.paPocetLudiPred = self.queueSize()-1;]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
@@ -2005,7 +2084,8 @@ agent.paZaciatokObsluhy = time();]]></Code>
 							<Name><![CDATA[onEnter]]></Name>
 							<Value Class="CodeValue">
 								<Code><![CDATA[statDlzkaRaduPokladna2.add(self.queueSize(),time());
-agent.paZaciatokCakaniaRad = time();]]></Code>
+agent.paZaciatokCakaniaRad = time();
+agent.paPocetLudiPred = self.queueSize()-1;]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
@@ -2225,7 +2305,8 @@ agent.paZaciatokObsluhy = time();]]></Code>
 							<Name><![CDATA[onEnter]]></Name>
 							<Value Class="CodeValue">
 								<Code><![CDATA[statDlzkaRaduPokladna3.add(self.queueSize(), time());
-agent.paZaciatokCakaniaRad = time();]]></Code>
+agent.paZaciatokCakaniaRad = time();
+agent.paPocetLudiPred = self.queueSize()-1;]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
@@ -2440,7 +2521,8 @@ agent.paZaciatokObsluhy = time();]]></Code>
 							<Name><![CDATA[onEnter]]></Name>
 							<Value Class="CodeValue">
 								<Code><![CDATA[statDlzkaRaduPokladna4.add(self.queueSize(),time());
-agent.paZaciatokCakaniaRad = time();]]></Code>
+agent.paZaciatokCakaniaRad = time();
+agent.paPocetLudiPred = self.queueSize()-1;]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
@@ -3722,23 +3804,23 @@ agent.paZaciatokObsluhy = time();]]></Code>
 				</Variable>
 				<Variable Class="Parameter">
 					<Id>1481026469828</Id>
-					<Name><![CDATA[paZlava]]></Name>
+					<Name><![CDATA[paPocetLudiPred]]></Name>
 					<X>50</X><Y>200</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
-						<Type><![CDATA[boolean]]></Type>
+						<Type><![CDATA[int]]></Type>
 						<UnitType><![CDATA[NONE]]></UnitType>
 						<NumericType><![CDATA[double]]></NumericType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeValue">
-							<Code><![CDATA[false]]></Code>
+							<Code><![CDATA[0]]></Code>
 						</DefaultValue>
 						<ParameterEditor>
 							<Id>1481026469826</Id>
-							<EditorContolType>CHECK_BOX</EditorContolType>
+							<EditorContolType>TEXT_BOX</EditorContolType>
 							<MinSliderValue><![CDATA[0]]></MinSliderValue>
 							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
 							<DelimeterType>NO_DELIMETER</DelimeterType>
@@ -4071,6 +4153,12 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 			</Controls>
 
 			<Parameters>			
+				<Parameter>
+					<ParameterName><![CDATA[paPocetAkcLudi]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[paPocetBrigadnikov]]></ParameterName>
+				</Parameter>
 			</Parameters>			
 			<PresentationProperties 
 				EnableAdaptiveFrameManagement="true" 
@@ -4129,13 +4217,14 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 			<RandomNumberGenerationType>randomSeed</RandomNumberGenerationType>
 			<CustomGeneratorCode>new Random()</CustomGeneratorCode>
 			<BeforeSimulationRunCode><![CDATA[int pocetAkcLudi = rbPocetAkcLudi.getValue();
-root.varPocetAkcLudi =  (pocetAkcLudi < 0) ? 5 : pocetAkcLudi;
+root.paPocetAkcLudi =  (pocetAkcLudi < 0) ? 0 : pocetAkcLudi + 2;
+
 
 int pocetBrigadnikov = rbPocetBrigarnikov.getValue();
-root.varPocetBrigadnikov = ( pocetBrigadnikov < 0) ? 0 : pocetBrigadnikov;
+root.paPocetBrigadnikov = ( pocetBrigadnikov < 0) ? 0 : pocetBrigadnikov;
 
 if (rbPocetBrigarnikov.getValue() == 1 ) {
-	//root.pokladna1.set_;
+	
 }
 
 
@@ -4149,12 +4238,165 @@ statPriemDlzkaRaduPokladna3.add(root.statDlzkaRaduPokladna3.mean(),time());
 statPriemDlzkaRaduPokladna4.add(root.statDlzkaRaduPokladna4.mean(),time());
 
 statPriemCasCakaniaRad.add(root.statCasCakaniaRad.mean());
-statPriemCasObsluhyPokladna.add(root.statCasObsluhyPokladna.mean());]]></AfterSimulationRunCode>
+statPriemCasObsluhyPokladna.add(root.statCasObsluhyPokladna.mean());
+
+statPercentaLudiSoZlavou.add(root.varZlavaPercent);
+
+
+// sledovanie zlavy
+varLavySoZlavou = statPercentaLudiSoZlavou.mean()-(1.6449*statPercentaLudiSoZlavou.deviation()/sqrt(statPercentaLudiSoZlavou.count()));
+varPravySoZlavou = statPercentaLudiSoZlavou.mean()+(1.6449*statPercentaLudiSoZlavou.deviation()/sqrt(statPercentaLudiSoZlavou.count()));
+ftExportZlavaRad.println(statPercentaLudiSoZlavou.count()+ " " + root.varZlavaPercent);
+
+// sledovanie casu v systeme
+varLavyCasVSysteme = statPriemPobytVSysteme.mean()-(1.6449*statPriemPobytVSysteme.deviation()/sqrt(statPriemPobytVSysteme.count()));
+varPravyCasVSysteme = statPriemPobytVSysteme.mean()+(1.6449*statPriemPobytVSysteme.deviation()/sqrt(statPriemPobytVSysteme.count()));
+ftExportCasVSysteme.println(statPriemPobytVSysteme.count()+ " " + root.statPobytVSysteme.mean());
+
+// sledovanie poctu brigadnikov
+
+]]></AfterSimulationRunCode>
 			<SeedValue>1</SeedValue>
 			<SelectionModeForSimultaneousEvents>LIFO</SelectionModeForSimultaneousEvents>
 			<VmArgs><![CDATA[]]></VmArgs>
 			<LoadRootFromSnapshot>false</LoadRootFromSnapshot>
 			<SnapshotFile></SnapshotFile>
+			<Variables>
+				<Variable Class="PlainVariable">
+					<Id>1481040506067</Id>
+					<Name><![CDATA[varPravySoZlavou]]></Name>
+					<X>700</X><Y>170</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[0.0]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1481040511366</Id>
+					<Name><![CDATA[varLavySoZlavou]]></Name>
+					<X>700</X><Y>200</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[0.0]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1481040534186</Id>
+					<Name><![CDATA[varPravyCasVSysteme]]></Name>
+					<X>700</X><Y>280</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[0.0]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1481040537392</Id>
+					<Name><![CDATA[varLavyCasVSysteme]]></Name>
+					<X>700</X><Y>310</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[0.0]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1481040541057</Id>
+					<Name><![CDATA[variable4]]></Name>
+					<X>700</X><Y>480</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[0.0]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1481040544864</Id>
+					<Name><![CDATA[variable5]]></Name>
+					<X>700</X><Y>520</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[0.0]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+			</Variables>
+			<Connectivity>
+				<TextFile>
+					<Id>1481040735897</Id>
+					<Name><![CDATA[ftExportZlavaRad]]></Name>
+					<X>700</X><Y>230</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<FileType>FILE</FileType>
+					<FileName><![CDATA[experimentLudiaZlava.txt]]></FileName>
+					<FileMode>WRITE</FileMode>
+					<CharsetName>null</CharsetName>
+					<Separators></Separators>
+				</TextFile>
+				<TextFile>
+					<Id>1481040739443</Id>
+					<Name><![CDATA[ftExportCasVSysteme]]></Name>
+					<X>700</X><Y>340</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<FileType>FILE</FileType>
+					<FileName><![CDATA[experimentCasVSysteme.txt]]></FileName>
+					<FileMode>WRITE</FileMode>
+					<CharsetName>null</CharsetName>
+					<Separators></Separators>
+				</TextFile>
+				<TextFile>
+					<Id>1481040745176</Id>
+					<Name><![CDATA[file2]]></Name>
+					<X>700</X><Y>540</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<FileType>FILE</FileType>
+					<FileName><![CDATA[]]></FileName>
+					<FileMode>READ</FileMode>
+					<CharsetName>null</CharsetName>
+					<Separators></Separators>
+				</TextFile>
+			</Connectivity>
 			<AnalysisData>
     			<Statistics>
 					<Id>1481026215217</Id>
@@ -4293,6 +4535,27 @@ statPriemCasObsluhyPokladna.add(root.statCasObsluhyPokladna.mean());]]></AfterSi
 					<AutoUpdate>true</AutoUpdate>
 					<OccurrenceAtTime>true</OccurrenceAtTime>
 					<OccurrenceDate>1481011200000</OccurrenceDate>
+					<OccurrenceTime Class="CodeUnitValue">
+						<Code><![CDATA[0]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
+					</OccurrenceTime>
+					<RecurrenceCode Class="CodeUnitValue">
+						<Code><![CDATA[1]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
+					</RecurrenceCode>
+					<Discrete>true</Discrete>
+				</Statistics>
+    			<Statistics>
+					<Id>1481037373975</Id>
+					<Name><![CDATA[statPercentaLudiSoZlavou]]></Name>
+					<X>50</X><Y>500</Y>
+					<Label><X>15</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<AutoUpdate>true</AutoUpdate>
+					<OccurrenceAtTime>true</OccurrenceAtTime>
+					<OccurrenceDate>1481097600000</OccurrenceDate>
 					<OccurrenceTime Class="CodeUnitValue">
 						<Code><![CDATA[0]]></Code>
 						<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
@@ -4534,6 +4797,28 @@ statPriemCasObsluhyPokladna.add(root.statCasObsluhyPokladna.mean());]]></AfterSi
 					</Font>
 					<Alignment>CENTER</Alignment>
 				</Text>
+				<Text>
+					<Id>1481037987557</Id>
+					<Name><![CDATA[text6]]></Name>
+					<X>440</X><Y>140</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<AsObject>true</AsObject>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[pocet ludi akc]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>20</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
 			</Shapes>
 			<Controls>
 				<Control Type="Button">
@@ -4602,20 +4887,21 @@ statPriemCasObsluhyPokladna.add(root.statCasObsluhyPokladna.mean());]]></AfterSi
 						<FillColor/>
 						<TextColor/>
 						<Enabled>true</Enabled>
+						<ActionCode><![CDATA[text6.setText(String.format("%d",rbPocetAkcLudi.getValue()));
+]]></ActionCode>
 					</BasicProperties>
 					<ExtendedProperties>
 						<Font Name="Dialog" Size="11" Style="0"/>
 						<DefaultValueCode><![CDATA[3]]></DefaultValueCode>
 						<Orientation>VERTICAL</Orientation>
+						<Button><![CDATA[0 ludi]]></Button>
+						<Button><![CDATA[1 clovek]]></Button>
 						<Button><![CDATA[2 ludia]]></Button>
 						<Button><![CDATA[3 ludia]]></Button>
 						<Button><![CDATA[4 ludia]]></Button>
 						<Button><![CDATA[5 ludi]]></Button>
 						<Button><![CDATA[6 ludi]]></Button>
 						<Button><![CDATA[7 ludi]]></Button>
-						<Button><![CDATA[8 ludi]]></Button>
-						<Button><![CDATA[9 ludi]]></Button>
-						<Button><![CDATA[10 ludi]]></Button>
 						<LinkTo>false</LinkTo>
 					</ExtendedProperties>
 				</Control>
@@ -4648,6 +4934,20 @@ statPriemCasObsluhyPokladna.add(root.statCasObsluhyPokladna.mean());]]></AfterSi
 			<AllowParallelEvaluations>true</AllowParallelEvaluations>
 			<UseFreeformParameters>false</UseFreeformParameters>
 			<NumberOfRuns>10</NumberOfRuns>
+			<FreeformParamValue>	
+				<Id>1481037879798</Id>
+			</FreeformParamValue>
+			<FreeformParamValue>	
+				<Id>1481037882782</Id>
+			</FreeformParamValue>
+			<RangeVariationParamValue>	
+				<Id>1481037879798</Id>
+				<Type>FIXED</Type>
+			</RangeVariationParamValue>
+			<RangeVariationParamValue>	
+				<Id>1481037882782</Id>
+				<Type>FIXED</Type>
+			</RangeVariationParamValue>
 			<ModelTimeProperties>
 				<StopOption><![CDATA[Stop at specified date]]></StopOption>
 				<InitialDate><![CDATA[1480849200000]]></InitialDate>	
